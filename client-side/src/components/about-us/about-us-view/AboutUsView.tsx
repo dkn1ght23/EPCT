@@ -10,6 +10,10 @@ import TeamCard from "@/components/common/team-card/TeamCard";
 import DecadeSectionView from "../decade-section-view/DecadeSectionView";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import ValueIconOne from "@/components/common/svg/ValueIconeOne";
+import ValueIconTwo from "@/components/common/svg/ValueIconeTwo";
+import ValueIconThree from "@/components/common/svg/ValueIconThree";
+import ValueIconFour from "@/components/common/svg/ValueIconFour";
 
 interface IAboutUsViewProps {
   team: ITeamMemberList[];
@@ -81,25 +85,10 @@ const AboutUsView = ({ team }: IAboutUsViewProps) => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
               >
-                ENGINEERING PLANNING CONSULTANCY TEAM (EPCT) is professionally
-                equipped to providing services in Civil Engineering related
-                Projects — Physical planning (Rural & Urban), Architecture,
-                Structural Engineering, Foundation Engineering, Water Resource
-                Engineering, Roads & Highways, Survey, Soil Investigation,
-                Feasibility Study. <br />
+               Established in 1990, the Engineering Planning Engineering Consultancy  Team (EPCT) has grown into a leading and highly respected Engineering Consultancy  firm in the Sylhet region. With over three decades of unparalleled engineering and planning excellence, EPCT has consistently set benchmarks for quality and innovation. The firm's extensive and versatile portfolio shows deep expertise across various fields, including Architecture, Civil Engineering, Planning, and Environmental Studies. 
                 <br />
-                Team approach is considered the appropriate tool to face the
-                multidisciplinary aspects of the present day need of integrating
-                the specialisation. EPCT has organised itself to cater the need
-                of this approach. ‘FREE LANCER must always think of new ideas &
-                new approaches if he is to keep selling’. This is the inherent
-                driving force for EPCT professionals. <br />
                 <br />
-                Finally EPCT intends to emerge steadily as efficient vehicles
-                for technology transfer to the Society for better environment by
-                using the tool of Social Engineering. EPCT, in last 32 years,
-                has emerged as biggest Regional Consulting Firm in Sylhet
-                region.
+                EPCT's commitment to delivering innovative and sustainable solutions is evident in its diverse range of successful projects for both government and private sector clients. The firm's long-standing relationships with various developers are a testament to the trust placed in its capabilities. EPCT's success is driven by a dedicated team of experts who passionately navigate complex challenges and exceed expectations, constantly seeking improvements rather than settling for the status quo.
               </motion.p>
               <CoreButton
                 isFullWidth={false}
@@ -142,12 +131,28 @@ const AboutUsView = ({ team }: IAboutUsViewProps) => {
             <div
               className={`${styles.valueCardInnerWrapper} ${styles.marginLeft}`}
             >
-              <ValueCard />
-              <ValueCard />
+              <ValueCard
+                icon={<ValueIconOne />}
+                title="Innovation & Creativity"
+                subtitle="We craft solutions that redefine industry standards."
+                />
+             <ValueCard
+                icon={<ValueIconTwo />}
+                title="Impact & Passion"
+                subtitle="We deliver brilliant and financially sound designs."
+                />
             </div>
             <div className={styles.valueCardInnerWrapper}>
-              <ValueCard />
-              <ValueCard />
+           <ValueCard
+                icon={<ValueIconThree />}
+                title="Loyalty & Profit"
+                subtitle="Our relationships are built on unwavering trust and integrity."
+                />
+            <ValueCard
+                icon={<ValueIconFour />}
+                title="Social Blueprint"
+                subtitle="Our work is a positive force for the environment and community."
+                />
             </div>
           </div>
         </Col>

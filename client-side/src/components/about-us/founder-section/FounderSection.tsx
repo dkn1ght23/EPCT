@@ -54,17 +54,24 @@ const FounderSection = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
               >
-                Our mission has always been to transform challenges into
-                opportunities, delivering excellence and innovation in every
-                project we undertake.
+              I believe in crafting solutions that redefine industry standards by delivering brilliant and financially sound designs. My commitment is to build on unwavering trust and integrity with every client, ensuring our work is a positive force for both the environment and the community it serves. Ultimately, I strive to create spaces that not only function beautifully but also enrich the lives of those who inhabit them.
               </motion.p>
 
               <div>
                 <motion.p className={styles.name} variants={textVariants}>
-                  Ahmad Aziz
+                Mohiuddin Ahmed
                 </motion.p>
                 <motion.p className={styles.position} variants={textVariants}>
-                  Founder & CEO
+                Founder & Proprietor
+                </motion.p>
+                <motion.p className={styles.position} variants={textVariants}>
+                BSc Engg. (BUET) MSc Engg. (UK)
+                </motion.p>
+                <motion.p className={styles.position} variants={textVariants}>
+                Fellow: FIEB/2038
+                </motion.p>
+                <motion.p className={styles.position} variants={textVariants}>
+                Member: I.E.I, I.R.C, I.C.I
                 </motion.p>
               </div>
 

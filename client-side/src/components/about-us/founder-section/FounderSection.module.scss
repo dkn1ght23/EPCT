@@ -76,7 +76,7 @@
 
   .title {
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     background: $title-color;
     -webkit-background-clip: text;
@@ -84,13 +84,13 @@
     -webkit-text-fill-color: transparent;
 
     @media (max-width: 576px) {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 
   .name {
     margin: 0;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     color: $white-color;
   }

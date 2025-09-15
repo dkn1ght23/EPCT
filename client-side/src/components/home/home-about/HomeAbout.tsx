@@ -12,9 +12,15 @@ const { useBreakpoint } = Grid;
 const HomeAbout = () => {
   const screens = useBreakpoint();
   const router = useRouter();
+
   const goToAboutUs = () => {
     router.push("about-us");
   };
+
+  // 👉 Dynamic years of experience calculation
+  const foundingYear = 1991;
+  const currentYear = new Date().getFullYear();
+  const yearsOfExperience = currentYear - foundingYear + 1;
 
   return (
     <div className={styles.homeAboutWrapper}>
@@ -34,17 +40,10 @@ const HomeAbout = () => {
             <p> Who We Are</p>
           </div>
           <p className={styles.title}>
-            Sylhet’s Leading Consulting Firm Since 1991
+            Sylhet’s Leading Consulting Firm Since {foundingYear}
           </p>
           <p className={styles.subtitle}>
-            At EPCT - Engineering Planning Consultancy Team, we’re architects,
-            engineers, advisors, and planners designing a sustainable future.
-            With over 32 years of experience, we provide smart, forward-thinking
-            solutions in Sylhet. <br />
-            <br />
-            From essential infrastructure to advanced manufacturing, we worked
-            with governments, private clients, and communities to create
-            solutions that pass the test of time and meet today’s challenges.
+            Engineering Planning Engineering Consultancy  Team (EPCT) is a leading and highly reputed multidisciplinary firm in Sylhet, Bangladesh. With a legacy spanning over three decades, we are dedicated to designing Passion, Trust & Innovation. Our team of seasoned experts collaborates with diverse clients, from government entities to private developers, turning their visionary ideas into impactful and sustainable realities. We believe great design can transform lives, and our unwavering commitment is to always seek improvements, never settling for the status quo.
           </p>
           <div className={styles.bulletPoints}>
             <ul className={styles.bulletList}>
@@ -63,15 +62,15 @@ const HomeAbout = () => {
 
       <div className={styles.statsSection}>
         <div className={styles.singleCard}>
-          <CountdownEffect value={34} />
+          <CountdownEffect value={yearsOfExperience} />
           <p className={styles.text}>Years of Experience</p>
         </div>
         <div className={styles.singleCard}>
-          <CountdownEffect value={180} />
+          <CountdownEffect value={500} />
           <p className={styles.text}>Projects Completed</p>
         </div>
         <div className={styles.singleCard}>
-          <CountdownEffect value={125} />
+          <CountdownEffect value={200} />
           <p className={styles.text}>Client Served</p>
         </div>
       </div>
