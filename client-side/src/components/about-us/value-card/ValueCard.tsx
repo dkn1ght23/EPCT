@@ -1,15 +1,19 @@
 import ValueIcon from "@/components/common/svg/ValueIcon";
 import styles from "./ValueCard.module.scss";
 
-const ValueCard = () => {
+interface ValueCardProps {
+  icon?: React.ReactNode; // allow custom icons
+  title: string;
+  subtitle: string;
+}
+
+const ValueCard: React.FC<ValueCardProps> = ({ icon, title, subtitle }) => {
   return (
     <div className={styles.valueCardWrapper}>
-      <ValueIcon />
+      {icon || <ValueIcon />}
       <div className={styles.textSection}>
-        <p className={styles.title}>Innovation and Creativity</p>
-        <p className={styles.subtitle}>
-          Our dedication ensures projects that stand the test of time.
-        </p>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.subtitle}>{subtitle}</p>
       </div>
     </div>
   );
