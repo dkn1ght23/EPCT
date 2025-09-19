@@ -108,31 +108,17 @@ export const decadeDataOne: DecadeData[] = [
 
 export const decadeDataTwo: DecadeData[] = [
   {
-    year: 2010,
-    title: "Lafarge Surma Cement Ltd.",
+    year: 2020,
+    title: "New Directions",
     description:
-      "Partnered for two years delivering various engineering consultancy services.",
-    iconKey: "partnership",
-  },
-  {
-    year: 2010,
-    title: "Bridge Construction",
-    description:
-      "Constructed multiple bridges for clients like Knowledge City, ARK Real Estate, and more over a three-year span.",
+      "Focused more on social activities and high-rise building design initiatives.",
     iconKey: "project",
   },
   {
-    year: 2012,
-    title: "Oyster Poultry Partnership",
+    year: 2018,
+    title: "LGED Department",
     description:
-      "Long-standing collaboration providing complete engineering consultancy services.",
-    iconKey: "partnership",
-  },
-  {
-    year: 2015,
-    title: "Sylhet Gasfield",
-    description:
-      "Partnered for three years on various engineering consultancy services.",
+      "Partnered for surveys & sub-soil investigations over two years.",
     iconKey: "partnership",
   },
   {
@@ -143,18 +129,33 @@ export const decadeDataTwo: DecadeData[] = [
     iconKey: "partnership",
   },
   {
-    year: 2018,
-    title: "LGED Department",
+    year: 2015,
+    title: "Sylhet Gasfield",
     description:
-      "Partnered for surveys & sub-soil investigations over two years.",
+      "Partnered for three years on various engineering consultancy services.",
     iconKey: "partnership",
   },
   {
-    year: 2020,
-    title: "New Directions",
+    year: 2012,
+    title: "Oyster Poultry Partnership",
     description:
-      "Focused more on social activities and high-rise building design initiatives.",
+      "Long-standing collaboration providing complete engineering consultancy services.",
+    iconKey: "partnership",
+  },
+  {
+    year: 2010,
+    title: "Bridge Construction",
+    description:
+      "Constructed multiple bridges for clients like Knowledge City, ARK Real Estate, and more over a three-year span.",
     iconKey: "project",
   },
+  {
+    year: 2010,
+    title: "Lafarge Surma Cement Ltd.",
+    description:
+      "Partnered for two years delivering various engineering consultancy services.",
+    iconKey: "partnership",
+  },
 ];
+
 

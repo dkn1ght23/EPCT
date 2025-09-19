@@ -2,10 +2,11 @@ import { Col, Row } from "antd";
 import img from "../about-us.png";
 import Image from "next/image";
 import styles from "./FounderSection.module.scss";
-import ProfileTwitter from "@/components/common/svg/ProfileTwitter";
+// import ProfileTwitter from "@/components/common/svg/ProfileTwitter";
 import ProfileFacebook from "@/components/common/svg/ProfileFacebook";
-import ProfileLinkedin from "@/components/common/svg/ProfileLinkedin";
+// import ProfileLinkedin from "@/components/common/svg/ProfileLinkedin";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const containerVariants = {
   visible: { transition: { staggerChildren: 0.2 } },
@@ -76,9 +77,19 @@ const FounderSection = () => {
               </div>
 
               <div className={styles.founderSocial}>
+              
+              <Link
+              href="https://www.facebook.com/share/165M6Mw4vw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+              >
                 <ProfileFacebook />
-                <ProfileTwitter />
-                <ProfileLinkedin />
+                </Link>
+
+
+                {/* <ProfileTwitter />
+                <ProfileLinkedin /> */}
               </div>
             </div>
           </Col>
