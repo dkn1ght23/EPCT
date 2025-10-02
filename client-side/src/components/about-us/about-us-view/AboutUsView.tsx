@@ -145,7 +145,7 @@ const AboutUsView = ({ team }: IAboutUsViewProps) => {
             <div className={styles.valueCardInnerWrapper}>
            <ValueCard
                 icon={<ValueIconThree />}
-                title="Loyalty & Profit"
+                title="Loyalty Before Profit"
                 subtitle="Our relationships are built on unwavering trust and integrity."
                 />
             <ValueCard
